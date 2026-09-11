@@ -1,0 +1,463 @@
+package com.example.data.local
+
+import com.example.data.model.FoodItem
+
+object DefaultFoodDatabase {
+    val presetFoods: List<FoodItem> = listOf(
+        // 蛋白质类 (Proteins)
+        FoodItem(
+            id = "p_shrimp",
+            name = "白灼鲜虾 / 熟虾仁",
+            grams = 100,
+            calories = 99,
+            carbs = 0.5f,
+            protein = 21.0f,
+            fat = 1.1f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "高蛋白低脂肪，极佳的减脂与增肌食材"
+        ),
+        FoodItem(
+            id = "p_egg_boiled",
+            name = "水煮鸡蛋 (1个/约55g)",
+            grams = 55,
+            calories = 78,
+            carbs = 0.8f,
+            protein = 6.8f,
+            fat = 5.2f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "完全蛋白质，含优质卵磷脂与丰富微量元素"
+        ),
+        FoodItem(
+            id = "p_meatball_lean",
+            name = "清炖瘦肉丸 / 潮汕牛肉丸",
+            grams = 100,
+            calories = 145,
+            carbs = 3.5f,
+            protein = 18.2f,
+            fat = 6.5f,
+            fiber = 0.2f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "瘦肉压制，富含铁与肌酸，饱腹感强"
+        ),
+        FoodItem(
+            id = "p_chicken_breast",
+            name = "香煎 / 水煮鸡胸肉",
+            grams = 100,
+            calories = 120,
+            carbs = 0f,
+            protein = 24.5f,
+            fat = 2.0f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "经典健身食材，高纯度蛋白质来源"
+        ),
+        FoodItem(
+            id = "p_salmon",
+            name = "香煎三文鱼",
+            grams = 100,
+            calories = 208,
+            carbs = 0f,
+            protein = 22.0f,
+            fat = 13.0f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "富含 Omega-3 不饱和脂肪酸，有益心血管与抗炎"
+        ),
+        FoodItem(
+            id = "p_beef_lean",
+            name = "卤牛腱子 / 瘦牛肉",
+            grams = 100,
+            calories = 135,
+            carbs = 1.0f,
+            protein = 23.0f,
+            fat = 4.0f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "富含血红素铁和锌，提升基础代谢活力"
+        ),
+        FoodItem(
+            id = "p_tofu",
+            name = "嫩豆腐 / 北豆腐",
+            grams = 100,
+            calories = 81,
+            carbs = 2.5f,
+            protein = 8.5f,
+            fat = 4.2f,
+            fiber = 1.0f,
+            category = "植物蛋白",
+            giLevel = "低GI",
+            tip = "植物大豆蛋白，含丰富大豆异黄酮与钙质"
+        ),
+        FoodItem(
+            id = "p_greek_yogurt",
+            name = "无糖无脂希腊酸奶",
+            grams = 100,
+            calories = 65,
+            carbs = 3.6f,
+            protein = 10.0f,
+            fat = 0.4f,
+            fiber = 0f,
+            category = "乳品蛋白",
+            giLevel = "低GI",
+            tip = "高蛋白益生菌，促进肠道健康与延长饱腹"
+        ),
+        FoodItem(
+            id = "p_milk",
+            name = "脱脂/低脂鲜牛奶 (250ml)",
+            grams = 250,
+            calories = 110,
+            carbs = 12.0f,
+            protein = 8.5f,
+            fat = 3.0f,
+            fiber = 0f,
+            category = "乳品蛋白",
+            giLevel = "低GI",
+            tip = "天然乳钙与优质酪蛋白"
+        ),
+
+        // 优质碳水 / 慢碳 / 主食 (Carbs)
+        FoodItem(
+            id = "c_pumpkin_kabocha",
+            name = "清蒸贝贝南瓜 / 熟南瓜",
+            grams = 100,
+            calories = 52,
+            carbs = 11.8f,
+            protein = 1.4f,
+            fat = 0.2f,
+            fiber = 2.8f,
+            category = "优质慢碳",
+            giLevel = "低GI",
+            tip = "优质低卡主食替代，富含类胡萝卜素与可溶性膳食纤维"
+        ),
+        FoodItem(
+            id = "c_brown_rice",
+            name = "熟糙米饭 / 杂粮饭",
+            grams = 100,
+            calories = 130,
+            carbs = 27.5f,
+            protein = 2.8f,
+            fat = 1.0f,
+            fiber = 2.5f,
+            category = "优质慢碳",
+            giLevel = "低GI",
+            tip = "保留谷物胚芽与B族维生素，升糖平缓"
+        ),
+        FoodItem(
+            id = "c_sweet_potato",
+            name = "蒸红薯 / 烤紫薯",
+            grams = 100,
+            calories = 90,
+            carbs = 20.5f,
+            protein = 1.6f,
+            fat = 0.2f,
+            fiber = 3.0f,
+            category = "优质慢碳",
+            giLevel = "中GI",
+            tip = "高纤维低热量，天然甘甜健康主食"
+        ),
+        FoodItem(
+            id = "c_oatmeal",
+            name = "全谷物即食/纯燕麦片",
+            grams = 50,
+            calories = 185,
+            carbs = 31.0f,
+            protein = 6.5f,
+            fat = 3.5f,
+            fiber = 5.2f,
+            category = "优质慢碳",
+            giLevel = "低GI",
+            tip = "富含 β-葡聚糖，有效降低胆固醇与平稳血糖"
+        ),
+        FoodItem(
+            id = "c_corn",
+            name = "蒸甜玉米 (1根可食部分约160g)",
+            grams = 160,
+            calories = 165,
+            carbs = 34.0f,
+            protein = 5.2f,
+            fat = 2.0f,
+            fiber = 4.5f,
+            category = "优质慢碳",
+            giLevel = "中GI",
+            tip = "含丰富叶黄素与玉米黄质，保护视力"
+        ),
+        FoodItem(
+            id = "c_white_rice",
+            name = "蒸白米饭 (1碗约150g)",
+            grams = 150,
+            calories = 180,
+            carbs = 39.0f,
+            protein = 3.9f,
+            fat = 0.5f,
+            fiber = 0.6f,
+            category = "精制碳水",
+            giLevel = "高GI",
+            tip = "经典主食，消化快，运动前后可快速补充糖原"
+        ),
+        FoodItem(
+            id = "c_whole_wheat_bread",
+            name = "全麦吐司面包 (1片/约40g)",
+            grams = 40,
+            calories = 100,
+            carbs = 18.0f,
+            protein = 4.0f,
+            fat = 1.5f,
+            fiber = 2.8f,
+            category = "优质慢碳",
+            giLevel = "中GI",
+            tip = "早餐搭配鸡蛋或牛油果更营养"
+        ),
+
+        // 蔬菜与膳食纤维 (Vegetables & Fiber)
+        FoodItem(
+            id = "v_broccoli",
+            name = "水煮 / 清炒西兰花",
+            grams = 100,
+            calories = 34,
+            carbs = 4.5f,
+            protein = 2.8f,
+            fat = 0.4f,
+            fiber = 3.3f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "十字花科之王，富含萝卜硫素与丰富维生素C"
+        ),
+        FoodItem(
+            id = "v_carrot",
+            name = "水煮 / 生切胡萝卜片",
+            grams = 100,
+            calories = 39,
+            carbs = 8.5f,
+            protein = 1.0f,
+            fat = 0.2f,
+            fiber = 2.8f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "富含 β-胡萝卜素与抗氧化物，微量脂类更易吸收"
+        ),
+        FoodItem(
+            id = "v_spinach",
+            name = "白灼菠菜 / 绿叶菜",
+            grams = 100,
+            calories = 23,
+            carbs = 3.0f,
+            protein = 2.5f,
+            fat = 0.3f,
+            fiber = 2.2f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "高叶绿素与叶酸，热量极低"
+        ),
+        FoodItem(
+            id = "v_cucumber",
+            name = "生鲜黄瓜 / 拍黄瓜",
+            grams = 100,
+            calories = 15,
+            carbs = 2.9f,
+            protein = 0.8f,
+            fat = 0.1f,
+            fiber = 0.8f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "含水率 96%，补充水分与丙醇二酸"
+        ),
+        FoodItem(
+            id = "v_tomato",
+            name = "小番茄 / 圣女果 (100g约8颗)",
+            grams = 100,
+            calories = 22,
+            carbs = 4.2f,
+            protein = 0.9f,
+            fat = 0.2f,
+            fiber = 1.4f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "富含番茄红素，抗氧化与提升免疫力"
+        ),
+        FoodItem(
+            id = "v_mushroom",
+            name = "口蘑 / 杏鲍菇",
+            grams = 100,
+            calories = 28,
+            carbs = 4.0f,
+            protein = 2.6f,
+            fat = 0.3f,
+            fiber = 2.1f,
+            category = "菌菇类",
+            giLevel = "低GI",
+            tip = "高多糖低脂肪，鲜味十足且天然低卡"
+        ),
+
+        // 健康油脂与坚果 (Fats & Nuts)
+        FoodItem(
+            id = "f_avocado",
+            name = "牛油果 (半个约80g)",
+            grams = 80,
+            calories = 130,
+            carbs = 4.5f,
+            protein = 1.6f,
+            fat = 12.0f,
+            fiber = 5.4f,
+            category = "优质脂肪",
+            giLevel = "低GI",
+            tip = "单不饱和脂肪酸与极高膳食纤维，抗氧化强"
+        ),
+        FoodItem(
+            id = "f_mixed_nuts",
+            name = "原味综合坚果 (每日一小包约25g)",
+            grams = 25,
+            calories = 150,
+            carbs = 5.0f,
+            protein = 4.5f,
+            fat = 13.5f,
+            fiber = 2.0f,
+            category = "优质脂肪",
+            giLevel = "低GI",
+            tip = "巴旦木、核桃、腰果，补脑护心"
+        ),
+        FoodItem(
+            id = "f_olive_oil",
+            name = "特级初榨橄榄油 (1汤匙约10g)",
+            grams = 10,
+            calories = 88,
+            carbs = 0f,
+            protein = 0f,
+            fat = 10.0f,
+            fiber = 0f,
+            category = "优质脂肪",
+            giLevel = "低GI",
+            tip = "地中海饮食核心，富含油酸与橄榄多酚"
+        ),
+
+        // 水果 (Fruits)
+        FoodItem(
+            id = "fr_apple",
+            name = "红富士苹果 (1个约200g)",
+            grams = 200,
+            calories = 104,
+            carbs = 26.0f,
+            protein = 0.6f,
+            fat = 0.4f,
+            fiber = 4.8f,
+            category = "低卡水果",
+            giLevel = "低GI",
+            tip = "富含果胶与槲皮素，饱腹且助消化"
+        ),
+        FoodItem(
+            id = "fr_banana",
+            name = "香蕉 (1根约120g)",
+            grams = 120,
+            calories = 108,
+            carbs = 27.0f,
+            protein = 1.3f,
+            fat = 0.3f,
+            fiber = 3.1f,
+            category = "能量水果",
+            giLevel = "中GI",
+            tip = "富含钾离子与色氨酸，运动前快速能量补给"
+        ),
+        FoodItem(
+            id = "fr_blueberries",
+            name = "新鲜蓝莓",
+            grams = 100,
+            calories = 57,
+            carbs = 14.5f,
+            protein = 0.7f,
+            fat = 0.3f,
+            fiber = 2.4f,
+            category = "抗氧化水果",
+            giLevel = "低GI",
+            tip = "超级食物，富含花青素与多种黄酮类"
+        )
+    )
+
+    // Preset Combo Plates (including the user uploaded healthy plate)
+    val userPlateCombo: List<FoodItem> = listOf(
+        FoodItem(
+            id = "user_shrimp",
+            name = "清蒸大虾 (约6只)",
+            grams = 90,
+            calories = 89,
+            carbs = 0.4f,
+            protein = 19.0f,
+            fat = 0.9f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "鲜美弹牙，纯净优质蛋白质"
+        ),
+        FoodItem(
+            id = "user_egg",
+            name = "水煮鸡蛋 (1整颗)",
+            grams = 55,
+            calories = 78,
+            carbs = 0.8f,
+            protein = 6.8f,
+            fat = 5.2f,
+            fiber = 0f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "天然完全蛋白与卵磷脂"
+        ),
+        FoodItem(
+            id = "user_carrot",
+            name = "薄切胡萝卜片 (水煮)",
+            grams = 80,
+            calories = 31,
+            carbs = 6.8f,
+            protein = 0.8f,
+            fat = 0.2f,
+            fiber = 2.2f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "富含胡萝卜素与抗氧化多酚"
+        ),
+        FoodItem(
+            id = "user_pumpkin",
+            name = "清蒸贝贝南瓜切块",
+            grams = 120,
+            calories = 62,
+            carbs = 14.2f,
+            protein = 1.7f,
+            fat = 0.3f,
+            fiber = 3.4f,
+            category = "优质慢碳",
+            giLevel = "低GI",
+            tip = "慢碳粗粮主食，粉糯甜香低升糖"
+        ),
+        FoodItem(
+            id = "user_broccoli",
+            name = "水煮鲜西兰花",
+            grams = 100,
+            calories = 34,
+            carbs = 4.5f,
+            protein = 2.8f,
+            fat = 0.4f,
+            fiber = 3.3f,
+            category = "高纤蔬菜",
+            giLevel = "低GI",
+            tip = "高纤维抗氧化，减脂餐必备绿叶蔬菜"
+        ),
+        FoodItem(
+            id = "user_meatballs",
+            name = "清汤瘦肉丸 (3颗)",
+            grams = 60,
+            calories = 87,
+            carbs = 2.1f,
+            protein = 11.0f,
+            fat = 3.9f,
+            fiber = 0.1f,
+            category = "优质蛋白",
+            giLevel = "低GI",
+            tip = "优质肉类蛋白，增添风味与饱腹感"
+        )
+    )
+}

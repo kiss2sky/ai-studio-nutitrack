@@ -1,0 +1,6 @@
+{
+  "name": "NutriTrack",
+  "description": "卡路里追踪、AI食物营养分析与个性化饮食建议工具",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
